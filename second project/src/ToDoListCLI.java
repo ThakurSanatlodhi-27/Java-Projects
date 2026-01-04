@@ -16,7 +16,7 @@ public class ToDoListCLI {
             System.out.println("4. Exit");
             System.out.print("Choose an option (1-4): ");
             choice = scanner.nextInt();
-            scanner.nextLine(); // Clear newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -43,7 +43,7 @@ public class ToDoListCLI {
                         }
                         System.out.print("Enter task number to delete: ");
                         int index = scanner.nextInt();
-                        scanner.nextLine(); // Clear newline
+                        scanner.nextLine();
                         if (index> 0 && index <= tasks.size()) {
                             String removed = tasks.remove(index - 1);
                             System.out.println("Deleted: " + removed);
